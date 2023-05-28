@@ -2,9 +2,8 @@
  
 **Project file structure** 
 
- ![structure](https://drive.google.com/file/d/1bqSXAHgUh3QfckM3Ax4_LlAsGXZQI9zq/view?usp=share_link)
+ ![Screenshot 2023-05-06 071303](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/08232ca0-12e0-4cd0-989a-5ee52e22e87f)
 
- 
 **Dockerizing the Application:**
 
 Create a new file in the same directory as your Node application, called Dockerfile 
