@@ -8,54 +8,53 @@
 
 Create a new file in the same directory as your Node application, called Dockerfile 
 
- ![dockerFile](https://drive.google.com/file/d/1R2SEVzNLQ45np7fjc9u3xS4wq6BqF_Ae/view?usp=share_link)
+![Screenshot 2023-05-06 071903](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/cb811967-9726-4fef-be99-4f4457b1e65c)
+
 
 Build the Docker images 
 
- ![dockerImage](https://drive.google.com/file/d/1P3uFtq4I3z-61yKBwnvYnPG3lxKzB8M2/view?usp=share_link)
+![Screenshot 2023-05-06 072349](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/271588bc-753f-463b-84bd-ecd6a5c99c8c)
 
 The docker images command retrieves the images and tags in the container 
 
- 
- ![dockerTag](https://drive.google.com/file/d/1jedTqJRdow7snLFd6nVRoAflouZubRrL/view?usp=share_link)
+   ![Screenshot 2023-05-06 072534](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/39ce3bbf-f472-4f04-ac63-8f5c978598a0)
 
-  
 
 **Setting up EC2 on AWS**
 
 On AWS Management console navigate to EC2 by searching for it 
 
- ![i1](https://drive.google.com/file/d/1Ss1wdfjiWk75OLs8C5hcwJmv403NuY7w/view?usp=share_link)
+![Screenshot 2023-05-06 072748](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/2e99ec7b-4daa-4e1d-954a-0ea00351185e)
 
 As a next step click on launch instance button,  
 
- ![i2](https://drive.google.com/file/d/1nDH7_-9sMvIYdjwfG2l4MxaWj1zqul9A/view?usp=share_link)
+ ![Screenshot 2023-05-06 072901](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/45f7b044-0f88-4c66-9c03-9dcd44c9df93)
 
 Next we choose, 
 
- 
-![i3](https://drive.google.com/file/d/1MzV_8jAR8ojdHF7_d9pb2Uz11gSb9rHq/view?usp=share_link)
+![Screenshot 2023-05-06 073046](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/8c848b28-3e22-4d34-ba6e-7c4a60187948)
  
 
 Later we choose the t2.micro instance type which is eligible for free tier, so it's recommended to use that 
  
- ![i4](https://drive.google.com/file/d/1QmZqytLSkEIlRY5b0mbEkhY21aL_PlVH/view?usp=share_link)
+![Screenshot 2023-05-06 073232](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/7ba7f43e-bde1-43bf-a045-4d48799b976b)
+
 
 After launching, 
 
- 
-![i5](https://drive.google.com/file/d/1YOfhyp-gjaBfwUX8Ybhd9DEYdlG0qBfq/view?usp=share_link)
+ ![Screenshot 2023-05-06 073343](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/58b3f11a-a923-489a-b684-960eeb249e06)
  
 
 **Connecting to EC2 instance**
 
 Setting only read permission for root user for the created key-pair file 
 
-![i6](https://drive.google.com/file/d/1eqC07rkq1Jo215qdOjp8dLY66lt7ASQ1/view?usp=share_link) 
+![Screenshot 2023-05-06 073515](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/4ab2b3e9-945b-4f9d-bb47-803b4d1f271e)
 
 Running the docker on port 3000 inside EC2 machine 
 
- ![i7](https://drive.google.com/file/d/1SMh5iePMgs4Oq4UPOINraVZXh5Cy7AC9/view?usp=share_link)
+
+![Screenshot 2023-05-06 074015](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/dd8fad8d-65de-4331-98fc-0b8aca2bed9e)
 
  
 **Installing Jenkins on the Instance**
@@ -105,7 +104,8 @@ Now copy the public IP address of the Jenkins instance, which is present in the 
 
 Enter this IP address with the port number, i.e., "<ip_address:port_number>"- "http://3.85.112.241:8080"
 
-![i8](https://drive.google.com/file/d/1kFo82WR1_A0O368CbBi9FJhuDRXugYy5/view?usp=share_link)
+![Screenshot 2023-05-06 074415](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/425536b2-0c8b-463a-a983-36c7d3ba5f49)
+
 
 Get the password by entering the following command and enter it in the text box
 
@@ -143,7 +143,8 @@ Automating CI/CD using Jenkins
 
 First, you need to create a New Jenkins freestyle Pipeline
 
-![](https://drive.google.com/file/d/1h-kz7dHkYCi76gtY4qMn6uAJIkm1BQF7/view?usp=share_link)
+![Screenshot (462)](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/00c77cbd-8341-44fc-8e85-73e9cff87cb8)
+
 
 After creating a Job we need to create a private and public key which will be used to integrate our GitHub and Jenkins for the Continuous Integration part.
 
@@ -153,7 +154,7 @@ ssh-keygen
 cd .ssh
 ls
 
-![](https://drive.google.com/file/d/1H8ga9pmawrVgN-Kz4N8KUiIJsRD5x5ZH/view?usp=share_link)
+![Screenshot 2023-05-28 174835](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/9170d161-1523-4885-9831-144ea526ed5c)
 
 sudo cat id_rsa.pub
 Where id_rsa.pub stands for Public Key and id_rsa stands for Private Key
@@ -162,38 +163,57 @@ After generating the Public and Private Key now we need to connect our Jenkins w
 
 Go the Github Settings > click on SSH and GPG keys > Give any title and paste the Public Key we generated > click on Add SSH Key
 
-![](https://drive.google.com/file/d/1WUfdMnh8D4fVtAHYOcOIbUUSn1NUYmwz/view?usp=share_link)
+![Screenshot (463)](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/f3c640f2-519c-4e44-89c0-6338ffaee2a5)
+
 
 After creating the freestyle Project now we need to add the respective credentials in the Jenkins
 
-![](https://drive.google.com/file/d/1_iFg-UPk9dx-ZijzUQXMhG2OAkVwax41/view?usp=share_link)
+![Screenshot (464)](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/1af63a95-fbc8-4c03-b2ce-20c755ec74eb)
+
 
 Give the Jenkins Project a Description after that add the Repo url "Github Link"
 
 In the Source Code Management, choose git and enter the repository URL, by clicking on code.
 
-![](https://drive.google.com/file/d/1BERkJgZlTWEQY8AQTwOic6fSQIAMqh0-/view?usp=share_link)
+![Screenshot (465)](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/0ea417f3-aa68-46f6-81ee-c625080c817c)
+
 
 Create a new credential by clicking on add and new pop-up screen will appear overhere Select kind to be "SSH Username with private key", let the scope be global.
 
-![](https://drive.google.com/file/d/1EmF-FY42Qzqx_gW7E1k_cDULkBWZn48z/view?usp=share_link)
+![Screenshot (466)](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/a720eded-9da7-4fed-83e0-91844d1abe37)
+
 
 Further, add the Private Key generate in the instance and paste it over here and click on add button to save it.
 
-![](https://drive.google.com/file/d/1U2bA8cRHUNw84bo4E29b52SL-MlKRtui/view?usp=share_link)
+![Screenshot (468)](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/315d180d-f30e-4a0c-b93b-824855571e33)
+
 
 After select the ubuntu credentials and Since all the code is in the master branch in the given project, we will use the master branch.
 
-![](https://drive.google.com/file/d/17sIjp5q-N3KW8U6xhea_8uKyV9Ezby4g/view?usp=share_link)
+![Screenshot (469)](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/406dbcda-6b84-4eb7-8c4b-93604ec9ebdc)
+
 
 Here click on the "Github hook trigger for GITScm polling" tick is so the any chance made in the Github code base can be reflect over here and a new build can be executed for that we need to make a small change in our Project Repository and all this work is done by Github Webhook > Go to Project Repo Settings > Webhook > Add webhook
 
-![](https://drive.google.com/file/d/14dqffntjuX3MAoLtr6unwvcpsxrdgFev/view?usp=share_link)
+![Screenshot (470)](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/da248754-ea03-4e61-b8b3-317a394f661e)
+
 
 Over their you need to enter your this IP address with the port number, i.e., "<ip_address:port_number/github-webhook/>"- "http://3.85.112.241:8080/github-webhook/" and select content type as "application/json" and click on "Add webhook"
 
-![](https://drive.google.com/file/d/1-rLOtkZVpQrPFZNpYNIMmPf0cNpMiu8i/view?usp=share_link)
+![Screenshot (471)](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/c69c613e-5914-4ba1-836d-413258005378)
+
+![Screenshot (472)](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/b2c7d23d-b354-409f-8f0d-2c63e9b8299c)
+
+![Screenshot (473)](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/f7ab5be3-5264-4a82-98be-7333f865f1ce)
+
+![Screenshot (474)](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/07d7925b-402f-4301-b4d1-28aaeeed2d67)
+
+![Screenshot (475)](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/2f89ce1f-da8f-4b1c-964a-908b4d504ada)
+
+![Screenshot (476)](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/a4f6c963-f691-4232-8894-07d3fccc93d2)
+
 
 Architecture diagram
 
-![](https://drive.google.com/file/d/1M_5yTAB_nF-qJwjWLywkLLuhSoGfwWty/view?usp=share_link)
+![image](https://github.com/yathinsp/lms-saas-backend-main/assets/38605313/7409f570-45f6-43e2-a6af-72a2f07d75b0)
+
